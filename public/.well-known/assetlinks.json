@@ -1,0 +1,38 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "play.wriety",
+      "sha256_cert_fingerprints": [
+        "33:E1:DC:C4:FE:9A:C7:23:76:68:50:1D:FE:D8:1F:89:E2:03:87:16:CB:B5:CF:6B:C3:A9:B4:10:FF:2E:3C:3F",
+        "D5:5F:E8:5A:35:45:EE:A7:B9:C7:FB:FF:C0:AC:18:60:FC:CC:E4:CE:0F:C8:9B:E1:38:A0:FC:02:5E:B6:FE:40",
+        "FC:8F:24:30:1D:C1:1E:EB:FD:EE:6D:45:19:C6:E6:0C:2A:A7:70:CA:C4:D1:2D:5A:39:4B:CF:F0:6B:88:6D:E8"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "play.wriety.hikvision",
+      "sha256_cert_fingerprints": [
+        "33:E1:DC:C4:FE:9A:C7:23:76:68:50:1D:FE:D8:1F:89:E2:03:87:16:CB:B5:CF:6B:C3:A9:B4:10:FF:2E:3C:3F",
+        "D5:5F:E8:5A:35:45:EE:A7:B9:C7:FB:FF:C0:AC:18:60:FC:CC:E4:CE:0F:C8:9B:E1:38:A0:FC:02:5E:B6:FE:40",
+        "FC:8F:24:30:1D:C1:1E:EB:FD:EE:6D:45:19:C6:E6:0C:2A:A7:70:CA:C4:D1:2D:5A:39:4B:CF:F0:6B:88:6D:E8"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "play.wriety.deephubcanvas",
+      "sha256_cert_fingerprints": [
+        "33:E1:DC:C4:FE:9A:C7:23:76:68:50:1D:FE:D8:1F:89:E2:03:87:16:CB:B5:CF:6B:C3:A9:B4:10:FF:2E:3C:3F",
+        "D5:5F:E8:5A:35:45:EE:A7:B9:C7:FB:FF:C0:AC:18:60:FC:CC:E4:CE:0F:C8:9B:E1:38:A0:FC:02:5E:B6:FE:40",
+        "FC:8F:24:30:1D:C1:1E:EB:FD:EE:6D:45:19:C6:E6:0C:2A:A7:70:CA:C4:D1:2D:5A:39:4B:CF:F0:6B:88:6D:E8"
+      ]
+    }
+  }
+]

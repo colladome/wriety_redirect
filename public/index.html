@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
@@ -24,13 +24,58 @@
               <h4 class="text-secondary">
                 You have Successfully connected to Writey
               </h4>
+              <!-- <h4 class="text-secondary">
+                Deployed 4
+              </h4> -->
             </div>
             <div>
-              <button class="btn" onclick="redirectToDesktop()">open Writey</button>
+              <button class="btn" onclick="updateData()">open Writey</button>
             </div>
           </div>
         </main>
       </div>
     </section>
+    <script src="https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.8/firebase-firestore.js"></script>
+    <script>
+
+
+      function updateData() {
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAgbiqNG502TQMrxiKJFIwu6T3iIFNN_uA",
+  authDomain: "wriety-online.firebaseapp.com",
+  databaseURL: "https://wriety-online-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "wriety-online",
+  storageBucket: "wriety-online.appspot.com",
+  messagingSenderId: "649407930400",
+  appId: "1:649407930400:web:eb1520f7e888c48ec71c45",
+  measurementId: "G-DGLTVGR7QY"
+};
+
+
+firebase.initializeApp(firebaseConfig);
+
+    const firestore = firebase.firestore();
+
+var currentURL = window.location.href;
+
+const data =  currentURL.split('/#')[1];
+
+firestore.collection('gdrive').doc('data').update({
+  'currentURL': currentURL,
+})
+.then(() => {
+  console.log('Document successfully updated!');
+})
+.catch((error) => {
+  console.error('Error updating document: ', error);
+});
+}
+
+
+
+    </script>
+  
   </body>
 </html>
